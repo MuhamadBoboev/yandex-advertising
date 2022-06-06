@@ -1,0 +1,85 @@
+@import 'color-mixins';
+
+a {
+  text-decoration: none;
+  color: $colorVeryDark
+}
+body {
+  @include font ($fontFuture-Medium, 16px, 130%);
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0;
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+/* ********** container ************ */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 0 1;
+
+}
+._container {
+  max-width: 1160px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.display-none {
+  display: none
+}
+/****************** button ************************/
+.button {
+  display: inline-block;
+  @include font($fontFuture-Medium, 16px, 130%);
+  color: $colorWhite;
+  background-color: $colorRed;
+  padding: 15px 33px;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 80px;
+}
+.button:hover, .button:focus  {
+  background-color: $colorVeryDark;
+  color: $colorWhite;
+}
+.button:active, .button:focus {
+  background-color: $colorGDark;
+  color: $colorWhite
+}
+.white_button {
+  background-color: $colorWhite;
+  color: $colorVeryDark;
+}
+.white_button:hover {
+  background-color: $colorBgMainBlock;
+  color: $colorRed;
+}
+.white_button:active, .white_button:focus {
+  background-color: $colorGDark;
+  color: $colorWhite
+}
+/* **************** global class ******************* */
+
+@import 'header';
+/******************* page **************/
+.page {
+  position: relative;
+}
+.page.burger-active {
+  // background-color: red
+}
+.font-title {
+  @include font ($fontFuture-Bold, 50px, 64px);
+  text-transform: uppercase;
+}
+@import 'main-body';
+/* ********************** lets go **************** */

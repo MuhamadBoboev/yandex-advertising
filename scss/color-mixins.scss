@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Futura PT Bold';
+  src: local('Futura PT Bold'), local('Futura-PT-Bold'),
+      url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+      url('../fonts/FuturaPT-Bold.woff') format('woff'),
+      url('../fonts/FuturaPT-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT Medium';
+  src: local('Futura PT Medium'), local('Futura-PT-Medium'),
+      url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+      url('../fonts/FuturaPT-Medium.woff') format('woff'),
+      url('../fonts/FuturaPT-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT Book';
+  src: local('Futura PT Book'), local('Futura-PT-Book'),
+      url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+      url('../fonts/FuturaPT-Book.woff') format('woff'),
+      url('../fonts/FuturaPT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT Light';
+  src: local('Futura PT Light'), local('Futura-PT-Light'),
+      url('../fonts/FuturaPT-Light.woff2') format('woff2'),
+      url('../fonts/FuturaPT-Light.woff') format('woff'),
+      url('../fonts/FuturaPT-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+/* ************ FONT *********** */
+$fontFuture-Medium: 'Futura PT Medium';
+$fontFuture-Light: 'Futura PT Light';
+$fontFuture-Book: 'Futura PT Book';
+$fontFuture-Bold: 'Futura PT Bold';
+
+
+/* ********** Color ********* */
+$colorRed: #ED1B24;
+$colorVeryDark:#141B24;
+$colorWhite: #F5F6F8;
+$colorGDark: #A5A5A5;
+$colorGrey:  #E0E0E0;
+$colorBG: #FFEB80;
+$colorBGLight: #DECC6C;
+$colorBgMainBlock: #F5F5F5;;
+
+/* ********* mixin ************* */
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin font($fontFamily, $size, $lineHeight) {
+  font-family: $fontFamily;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin grid ($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
