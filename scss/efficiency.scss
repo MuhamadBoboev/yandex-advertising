@@ -1,0 +1,119 @@
+
+.efficiency {
+  background-color: $colorBGEfficiency;
+}
+.efficiency__body {
+  padding-top: 164px;
+  padding-bottom: 60px;
+}
+.efficiency__why-block {
+  margin-top: -66px;
+}
+.why-block {
+  max-width: 760px;
+  padding: 32px 48px;
+  background-color: $colorBGWhyBlock;
+  border: 1px solid $colorBGLight;
+  border-radius: 14px;
+}
+.why-block__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.why-block__title-button {
+  display: flex;
+  justify-content: space-between;
+}
+.why-block__title {
+  display: flex;
+  @include font ($fontFuture-Bold, 30px, 130%)
+}
+.why-block__button-1 {
+  display: flex;
+  min-width: 216px;
+}
+.why-block__button-2 {
+  display: none;
+}
+.why-block__items {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.why-block__item {
+  display: flex;
+}
+.why-block__svg {
+  margin-top: -5px;
+}
+.why-block__text {
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .efficiency__why-block {
+    margin-top: -30px;
+  }
+  .why-block__title {
+    font-size: 20px;
+  }
+  .why-block {
+    padding: 17px 15px;
+  }
+  .why-block__button-1 {
+    display: none;
+  }
+  .why-block__button-2 {
+    display: inherit;
+  }
+  .why-block__items {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .why-block__item:not(:first-child) {
+    margin-top: 14px;
+  }
+  .why-block__button-2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .button_why-block-2 {
+    width: 100%;
+  }
+}
+/***********************************************************************************/
+.efficiency__body {
+  display: flex;
+  flex-direction: column;
+}
+.title_efficiency {
+  text-align: center;
+}
+.efficiency__block-items {
+  margin-top: 30px;
+  @include grid (1fr 1fr, auto);
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
+.efficiency__item {
+  position: relative;
+  padding-left: 18px;
+}
+.efficiency__item::after {
+  position: absolute;
+  content: '';
+  top: 11px;
+  left: 0px;
+  background-color: $colorVeryDark;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .efficiency__block-items {
+    grid-template-columns: 1fr;
+  }
+}

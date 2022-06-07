@@ -52,8 +52,11 @@ $colorWhite: #F5F6F8;
 $colorGDark: #A5A5A5;
 $colorGrey:  #E0E0E0;
 $colorBG: #FFEB80;
+$colorBGWhyBlock: #FFF2AD;
+$colorBGEfficiency: #FFFCEE;
 $colorBGLight: #DECC6C;
-$colorBgMainBlock: #F5F5F5;;
+$colorBgMainBlock: #F5F5F5;
+
 
 /* ********* mixin ************* */
 @mixin size($width, $height) {

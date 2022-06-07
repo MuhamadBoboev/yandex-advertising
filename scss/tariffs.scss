@@ -1,0 +1,129 @@
+.tariffs__title {
+  margin-top: 60px;
+  text-align: center;
+}
+.tariffs__grid {
+  margin-top: 110px;
+  @include grid(1fr 1fr, 1fr);
+  grid-gap: 40px;
+}
+.tariffs__block {
+  position: relative;
+}
+.tariffs__block__title-svg {
+  position: relative;
+}
+.tariffs__block-svg {
+  position: absolute;
+  top: -120px;
+  left: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 123px;
+  height: 98px;
+}
+.tariffs__block-svg_1 {
+  left: 53%;
+}
+.tariffs__block__title {
+  text-align: center;
+  @include font($fontFuture-Bold, 30px, 133%);
+  color: $colorRed;
+}
+.tariffs__body {
+  background-color: $colorBGEfficiency;
+  border: 1px solid $colorBGWhyBlock;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 14px;
+}
+.tariffs__block__price-body {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 28px;
+  margin-top: 50px;
+  height: 100%;
+}
+.tariffs__block__text-block {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.tariffs__block__text-block-2 {
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+.tariffs__block__text-block_2 {
+  position: relative;
+}
+.tariffs__block__text-block_2::after {
+  position:absolute;
+  content: '';
+  top: -13px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $colorBGWhyBlock;
+}
+.tariffs__block__price {
+  padding-left: 5px;
+  min-width: 112px;
+  @include font($fontFuture-Book, 30px, 133%);
+  color: $colorRed;
+}
+.tariffs__block__text-small {
+  padding: 20px 20px;
+  text-align: center;
+  background-color: $colorBGWhyBlock;
+}
+.tariffs__block__text-small-p {
+  @include font($fontFuture-Book, 16px, 120%);
+  color: #1D1A0F;
+  opacity: 0.5;
+}
+.tariffs__block__button {
+  padding: 20px 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .tariffs__grid {
+    grid-template-columns: 1fr;
+  }
+  .tariffs__title {
+    margin-top: 35px;
+  }
+  .tariffs__block__text-block {
+    flex-direction: column;
+  }
+  .tariffs__block_2 {
+    margin-top: 66px;
+  }
+
+  .tariffs__block-svg {
+    top: -80px;
+    width: max-content;
+    height: max-content;
+  }
+  .tariffs__block-svg_1 {
+    top: -74px;
+  }
+  .tariffs__svg_1 {
+    width: 72px;
+    height: 63px;
+    transform: scale(1.1);
+  }
+  .tariffs__svg_2 {
+    width: 82px;
+    height: 77px;
+  }
+  .tariffs__block__price-body {
+    margin: 20px 10px;
+  }
+  .tariffs__block__text-block {
+    margin-top: 25px;
+  }
+}

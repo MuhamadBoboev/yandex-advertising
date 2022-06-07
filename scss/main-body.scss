@@ -12,15 +12,7 @@
   padding-top: 110px;
   padding-bottom: 119px;
 }
-.title {
-  text-transform: uppercase;
-  @include font($fontFuture-Book, 50px, 128%)
-}
-.title_red {
-  @include font($fontFuture-Bold, 50px, 128%);
-  color: $colorRed;
 
-}
 .main-body__dash {
   font-weight: 700;
 }
@@ -36,7 +28,7 @@
 
 
 @media (max-width:1040px) {
-  .title {
+  .title__main-body {
     // font-size: 50px;
     max-width: 500px;
   }
@@ -57,16 +49,20 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  .title {
-    padding-top: 30px;
+  .title__main-body {
     font-size: 30px;
-    padding-bottom: 30px;
   }
-  .title_red {
+  .title__main-body {
+    padding-top: 30px;
+  }
+  .title_red__main-body {
     font-size: 30px;
   }
   .title__main-body {
     min-width: 300px;
+  }
+  .text_main-body {
+    margin-top: 20px;
   }
   .main-body__img {
     top: 50px;
@@ -83,8 +79,7 @@
     text-align: center;
     max-width: none;
     max-height: none;
+    margin-top: 20px;
   }
 }
-@media (max-width: 600px) {
 
-}

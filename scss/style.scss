@@ -30,7 +30,7 @@ body {
 }
 ._container {
   max-width: 1160px;
-  padding: 0px 15px;
+  padding: 0px 10px;
   margin: 0 auto;
 }
 .display-none {
@@ -39,10 +39,10 @@ body {
 /****************** button ************************/
 .button {
   display: inline-block;
-  @include font($fontFuture-Medium, 16px, 130%);
+  @include font($fontFuture-Book, 18px, 130%);
   color: $colorWhite;
   background-color: $colorRed;
-  padding: 15px 33px;
+  padding: 14px 30px;
   border: none;
   text-transform: uppercase;
   border-radius: 80px;
@@ -68,7 +68,30 @@ body {
   color: $colorWhite
 }
 /* **************** global class ******************* */
+.title {
+  text-transform: uppercase;
+  @include font($fontFuture-Book, 50px, 128%)
+}
+.title_red {
+  @include font($fontFuture-Bold, 50px, 128%);
+  color: $colorRed;
+}
+.text {
+  @include font ($fontFuture-Book, 20px, 25px)
+}
+@media (max-width:768px) {
+  .title {
+    font-size: 24px
+  }
+  .title_red {
+    font-size: 24px
+  }
+  .text {
+    font-size: 16px
+  }
 
+}
+/* **************************************** */
 @import 'header';
 /******************* page **************/
 .page {
@@ -82,4 +105,6 @@ body {
   text-transform: uppercase;
 }
 @import 'main-body';
+@import 'efficiency';
+@import 'tariffs';
 /* ********************** lets go **************** */
