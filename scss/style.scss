@@ -42,7 +42,7 @@ body {
   @include font($fontFuture-Book, 18px, 130%);
   color: $colorWhite;
   background-color: $colorRed;
-  padding: 14px 30px;
+  padding: 13px 30px 14px;
   border: none;
   text-transform: uppercase;
   border-radius: 80px;
@@ -107,4 +107,8 @@ body {
 @import 'main-body';
 @import 'efficiency';
 @import 'tariffs';
+@import 'strategy';
+
+@import 'popup';
+@import 'footer';
 /* ********************** lets go **************** */

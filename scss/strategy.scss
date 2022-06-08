@@ -1,0 +1,149 @@
+.strategy {
+  background-color: $colorBGStrategy;
+}
+.strategy_container {
+
+}
+.strategy__block-body {
+  display: flex;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 108px;
+  margin-top: 60px;
+}
+.strategy__svg-block {
+  display: flex;
+  flex: 0 1 100%;
+}
+.strategy-svg {
+  width: 353px;
+  height: 328px;
+}
+.strategy__body {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px 0px 30px;
+}
+.text_strategy {
+  margin-top: 43px;
+}
+.strategy__buttons {
+  margin-top: 44px;
+  display: flex;
+}
+.strategy__button {
+  background-color: $colorWhite;
+  color: $colorVeryDark;
+  display: flex;
+  align-items: center;
+  p {
+    padding-left: 10px;
+  }
+}
+.strategy__button-2__block {
+  margin-left: 38px;
+  position: relative;
+}
+.strategy__button__text {
+  position: absolute;
+  text-align: center;
+  bottom: -50px;
+  left: 10px;
+  width: 204px;
+  @include font($fontFuture-Book, 16px, 120%);
+  height: auto;
+}
+.strategy__button:hover, .strategy__button:focus {
+  svg {
+    fill: violet;
+    stroke: rgb(255, 255, 255);
+  }
+}
+.strategy__button:active {
+  svg {
+    fill: violet;
+    stroke: rgb(50, 206, 97);
+  }
+}
+.message {
+  background-color: $colorRed;
+
+}
+.message__text {
+  @include font($fontFuture-Book, 16px, 133%);
+  color: $colorWhite;
+  text-align: center;
+  padding: 10px 0;
+}
+@media (max-width: 930px) {
+  .strategy__svg-block {
+    flex-wrap: wrap;
+  }
+  .strategy__body {
+    padding: 0px 20px 0px 20px;
+  }
+  .strategy__button-2__block {
+    margin-left: 15px;
+  }
+}
+@media (max-width:768px) {
+  .strategy__block-body {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .strategy__svg-block {
+    width: 100%;
+    justify-content: center;
+  }
+  .strategy-svg {
+    width: 157px;
+    height: 147px;
+  }
+  .strategy__body {
+    flex: 0 1 100%;
+    margin-top: 14px;
+    padding: 0;
+    text-align: center;
+  }
+  .text_strategy {
+    margin-top: 24px;
+  }
+  .strategy__buttons {
+    margin-top: 24px;
+    width: 100%;
+  }
+  .strategy__button {
+    width: 50%;
+  }
+  .strategy__button-2__block {
+    width: 50%;
+  }
+  .strategy__button-2 {
+    width: 100%;
+  }
+  .strategy__button__text {
+    width: 100%;
+    left: 0;
+    font-size: 14px;
+    bottom: -30px;
+  }
+  .strategy__block-body {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .strategy__buttons {
+    flex-direction: column;
+  }
+  .strategy__button {
+    width: 100%;
+  }
+  .strategy__button-2__block {
+    width: 100%;
+    margin-top: 14px;
+    margin-left: 0;
+  }
+  .strategy__button-2 {
+    width: 100%;
+  }
+}

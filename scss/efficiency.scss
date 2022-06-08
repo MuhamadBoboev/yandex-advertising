@@ -3,7 +3,7 @@
   background-color: $colorBGEfficiency;
 }
 .efficiency__body {
-  padding-top: 164px;
+  padding-top: 250px;
   padding-bottom: 60px;
 }
 .efficiency__why-block {
@@ -11,6 +11,10 @@
 }
 .why-block {
   max-width: 760px;
+  position: absolute;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  top: -50px;
   padding: 32px 48px;
   background-color: $colorBGWhyBlock;
   border: 1px solid $colorBGLight;
@@ -87,6 +91,7 @@
 .efficiency__body {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .title_efficiency {
   text-align: center;
@@ -96,6 +101,11 @@
   @include grid (1fr 1fr, auto);
   grid-column-gap: 40px;
   grid-row-gap: 20px;
+}
+.efficiency__block-items_body {
+  @include grid(1fr, auto);
+  grid-row-gap: 20px;
+  height: max-content;
 }
 .efficiency__item {
   position: relative;

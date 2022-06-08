@@ -1,0 +1,130 @@
+.footer {
+  background-color: $colorBGFooter;
+}
+.footer__body {
+  padding: 31px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.menu__list_footer {
+  @include grid (1fr, auto);
+  padding: 0;
+  margin-top: 0;
+}
+.menu__link_footer {
+  background-color: $colorBGFooter;
+  padding: 7px 10px;
+}
+.menu__link_footer:hover {
+  background-color: $colorRed;
+}
+.menu__link_footer:active, .menu__link_footer:focus{
+  background-color: $colorGDark;
+}
+.manu__item_footer:not(:first-child) {
+  margin: 0;
+}
+.manu__item_footer {
+  margin: 0;
+  font-size: 14px;
+}
+.menu__link_footer {
+  color: $colorWhite;
+  margin: 0;
+  font-size: 14px;
+}
+.footer__contacts {
+  @include grid(1fr, auto);
+}
+.footer__contacts-block {
+  display: flex;
+  align-items: center;
+}
+.footer__contacts-span {
+  display: flex;
+  color: $colorWhite;
+  align-items: center;
+}
+.footer__contacts__text {
+  padding: 10px;
+}
+.button_footer {
+  background-color: $colorBGStrategy;
+  color: $colorVeryDark;
+}
+.button_footer:hover {
+  background-color: $colorRed;
+}
+.button_footer:active, .button_footer:focus{
+  background-color: $colorGDark;
+}
+.footer__text {
+  margin-left: 30px;
+  text-align: end;
+  @include grid(1fr, auto);
+  grid-gap: 14px
+
+}
+.footer__text__p {
+  @include font($fontFuture-Book, 14px, 120%);
+  color: $colorWhite;
+}
+.footer__text__p_first {
+  text-decoration: underline;
+}
+
+@media (max-width:1100px) {
+  .footer__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .menu__list_footer {
+    order: 1;
+  }
+  .footer__button-block {
+    display: flex;
+    justify-content: end;
+  }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__text {
+    margin-left: 0;
+    width: 100%;
+    text-align: start;
+  }
+
+}
+@media (max-width:768px) {
+  .footer__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+  }
+  .footer__svg-block {
+    text-align: center;
+  }
+  .menu__list_footer {
+    order: 0;
+  }
+  .footer__button-block {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__text {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+}

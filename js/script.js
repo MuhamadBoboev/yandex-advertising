@@ -1,11 +1,13 @@
 'use strict'
 const burger = document.querySelector('.burger');
 const body = document.body;
+
 burger.addEventListener('click', function() {
   let mainNav = document.querySelector('.header__menu');
   let burgerSpan = document.querySelector('.burger::after');
+  let headerLogo = document.querySelector('[data-header-logo]');
 
-
+  headerLogo.classList.toggle('active');
   mainNav.classList.toggle('active');
   burger.classList.toggle('active');
   body.classList.toggle('lock');
@@ -47,26 +49,3 @@ window.addEventListener('scroll', () => {
 
 
 
-const suggestionsRow = document.querySelectorAll('.suggestions__row');
-suggestionsRow.forEach(function(event){
-  event.addEventListener('mouseover', function(){
-    event.querySelector('.suggestions__row__img').classList.toggle('display');
-  })
-  event.addEventListener('mouseout', function(){
-    event.querySelector('.suggestions__row__img').classList.toggle('display');
-
-  })
-})
-
-const tellFormBlock = document.querySelectorAll('.application__input_number');
-
-tellFormBlock.forEach(function(event) {
-  event.addEventListener('focus', ()=> {
-      event.setAttribute('value','+7');
-
-    });
-    event.addEventListener('blur', ()=> {
-      event.removeAttribute('value','+7');
-
-    });
-})
