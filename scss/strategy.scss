@@ -132,6 +132,17 @@
     padding-bottom: 80px;
   }
 }
+
+@media (max-width: 603px) {
+  .strategy__button__text {
+    bottom: -45px;
+  }
+}
+@media (max-width: 500px) {
+  .strategy__button__text {
+    // bottom: -30px;
+  }
+}
 @media (max-width: 500px) {
   .strategy__buttons {
     flex-direction: column;
