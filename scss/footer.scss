@@ -13,10 +13,11 @@
   margin-top: 0;
 }
 .menu__link_footer {
+  width: 100%;
   background-color: $colorBGFooter;
   padding: 7px 10px;
 }
-.menu__link_footer:hover {
+.menu__link_footer:hover, .menu__link_footer:focus {
   background-color: $colorRed;
 }
 .menu__link_footer:active, .menu__link_footer:focus{

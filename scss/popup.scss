@@ -53,7 +53,12 @@
   font-size: 25px;
   color: #000;
   text-decoration: none;
-
+}
+.popup__close:hover {
+  svg {
+    fill:  $colorRed;
+    stroke: $colorRed;
+  }
 }
 .popup__text {
   text-align: center;
