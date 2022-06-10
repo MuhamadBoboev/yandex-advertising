@@ -10,15 +10,20 @@
 
   opacity: 0;
   visibility: hidden;
-  // overflow-y: auto;
-  // overflow-x: hidden;
   transition: all 0.8s ease 0s;
 }
 .popup.open {
   opacity: 1;
   visibility: visible;
 }
+.popup__request.opens {
+  opacity: 1;
+  visibility: visible;
+}
 .popup.open .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+}
+.popup__request.opens .popup__content__request {
   transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
 }
 .popup__body {
@@ -35,16 +40,12 @@
   padding: 30px;
   position: relative;
   transition: all 0.8s ease 0s;
-  // opacity: 0;
   transform: translate(0px, -100%);
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
   -webkit-box-shadow: 0px 0px 57px 27px rgba(246, 249, 251, 0.21);
   -moz-box-shadow: 0px 0px 57px 27px rgba(246, 249, 251, 0.21);
   box-shadow: 0px 0px 57px 27px rgba(246, 249, 251, 0.21);
   border-radius: 15px;
-//   -webkit-box-shadow: 0px 0px 24px 34px rgba(244, 244, 244, 0.21);
-// -moz-box-shadow: 0px 0px 24px 34px rgba(244, 244, 244, 0.21);
-// box-shadow: 0px 0px 24px 34px rgba(244, 244, 244, 0.21);
 }
 .popup__close {
   position: absolute;
@@ -86,4 +87,41 @@
   .popup__text {
     font-size: 18px;
   }
+}
+
+/* ********************* request *********************** */
+
+.popup__block-body__request {
+  padding: 50px;
+  text-align: center;
+  max-width: 540px;
+}
+.request-text {
+  @include font ($fontFuture-Bold, 30px, 130%);
+  text-transform: uppercase;
+}
+.request-text_red {
+  color: $colorRed;
+}
+.popup__block-body__request {
+
+}
+.request__block-inputs {
+  margin-top: 30px;
+  width: 100%;
+  @include grid(1fr, auto);
+  grid-gap: 20px;
+}
+.request__input {
+  padding: 14px 23px 15px;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  background-color: $colorWhite;
+  font-size: 16px;
+  border-radius: 100px;
+  border: none;
+}
+.request__footer-text {
+  margin-top: 10px;
+  @include font ($fontFuture-Book, 14px, 125%)
 }

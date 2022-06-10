@@ -1,5 +1,5 @@
 @import 'color-mixins';
-
+@import 'popup';
 a {
   text-decoration: none;
   color: $colorVeryDark
@@ -109,6 +109,6 @@ body {
 @import 'tariffs';
 @import 'strategy';
 
-@import 'popup';
+
 @import 'footer';
 /* ********************** lets go **************** */

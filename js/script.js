@@ -1,11 +1,12 @@
 'use strict'
 const burger = document.querySelector('.burger');
 const body = document.body;
+let headerLogo = document.querySelector('[data-header-logo]');
 
 burger.addEventListener('click', function() {
   let mainNav = document.querySelector('.header__menu');
   let burgerSpan = document.querySelector('.burger::after');
-  let headerLogo = document.querySelector('[data-header-logo]');
+
 
   headerLogo.classList.toggle('active');
   mainNav.classList.toggle('active');
@@ -20,6 +21,7 @@ itemNav.forEach(function(event){
     let mainNav = document.querySelector('.header__menu');
     mainNav.classList.remove('active');
     burger.classList.remove('active');
+    headerLogo.classList.remove('active');
   })
 })
 /* ************** scroll ************** */

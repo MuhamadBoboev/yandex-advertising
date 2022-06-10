@@ -33,11 +33,9 @@
   display: flex;
 }
 .manu__item:not(:first-child) {
-  // margin-left: 60px;
   margin: 0px 10px;
 }
 .header__menu {
-  // padding: 0px 15px;
 }
 .menu__list_normal {
 
@@ -159,7 +157,6 @@
   }
   .header__menu.active {
     top: 0;
-    // padding-top: 100px;
   }
   .header__logo-img {
     position: relative;
@@ -178,16 +175,12 @@
   }
   .header__block-logo {
     z-index: 11;
-    // background-color: $colorBG;
   }
   .burger {
     margin-left: 30px;
   }
   .header__menu.active {
   }
-  // .header__logo {
-  //   height: 54px;
-  // }
   .header__logo-a.active {
     opacity: 0;
   }

@@ -245,7 +245,7 @@
                   Почему реклама в Яндексе:
                 </p>
                 <div class="why-block__button-1">
-                <button type="submit" class="button button_why-block">
+                <button type="submit" class="popup-request button button_why-block">
                     Обсудить проект
                 </button>
                 </div>
@@ -277,7 +277,7 @@
               </div>
             </div>
             <div class="why-block__button-2">
-              <button type="submit" class="button button_why-block button_why-block-2">
+              <button type="submit" class="popup-request button button_why-block button_why-block-2">
                   Обсудить проект
               </button>
             </div>
@@ -471,7 +471,7 @@
                     </p>
                   </div>
                   <div class="tariffs__block__button">
-                    <button type="submit" class="button" >Обсудить проект
+                    <button type="submit" class="popup-request button" >Обсудить проект
                     </button>
                   </div>
                 </div>
@@ -503,49 +503,13 @@
                     </p>
                   </div>
                   <div class="tariffs__block__button">
-                    <button type="submit" class="button" >Обсудить проект
+                    <button type="submit" class="popup-request button" >Обсудить проект
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- <div class="tariffs__block">
-              <div class="tariffs__body">
-                <div class="tariffs__block-svg">
-                  <svg class="tariffs__svg" width="123" height="98" viewBox="0 0 123 98">
-                    <use xlink:href="#tariffsPuzzle" ></use>
-                  </svg>
-                </div>
-                <p class="tariffs__block__title">
-                  Стандартный
-                </p>
-                <div class="tariffs__block__text-block">
-                  <p class="text tariffs__block__text ">
-                    Настройка и ведение рекламы 1-ый месяц
 
-                  </p>
-                  <span class="tariffs__block__price" >
-                    15 000₽
-                  </span>
-                </div>
-                <div class="tariffs__block__text-block tariffs__block__text-block_2">
-                  <p class="text tariffs__block__text ">
-                    Ежемесячное обслуживание
-                  </p>
-                  <span class="tariffs__block__price" >
-                    10 000₽
-                  </span>
-                </div>
-                <div class="tariffs__block__text-small">
-                  <p class="tariffs__block__text-small-p">
-                    Подходит для небольших компаний и  интернет-магазинов, которые предоставляют одну или несколько услуг
-                  </p>
-                </div>
-                <div class="tariffs__block__button">
-                  <button type="submit" class="button" >Обсудить проект
-                  </button>
-                </div>
-              </div>
             </div> -->
           </div>
         </div>
@@ -774,7 +738,7 @@
             </p>
           </div>
           <div class="footer__button-block">
-            <button type="submit" class="button button_footer" >
+            <button type="submit" class="popup-request button button_footer" >
               Обсудить проект
             </button>
           </div>
@@ -814,6 +778,44 @@
             <input class="popup__input" type="file" >
             <button type="submit" class="button button_popup ">Отправить</button>
           </div>
+
+        </div>
+      </div>
+    </form>
+    <form action="https://echo.htmlacademy.ru" method="post" id="popupRequest" class="popup popup__request">
+      <svg display="none" >
+        <symbol id="popupR" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" enable-background="new 0 0 50 50">
+          <path xmlns="http://www.w3.org/2000/svg" d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z"/>
+          <path xmlns="http://www.w3.org/2000/svg" d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z"/>
+        </symbol>
+      </svg>
+      <div class="popup__body popup__body__request">
+        <div class="popup__content popup__content__request">
+          <a id="popupClose" href="#popupClose" class="popup__close close-popup">
+            <svg width="35" height="35" viewBox="0 0 35 35">
+              <use xlink:href="#popupR"></use>
+            </svg>
+          </a>
+          <div class="popup__text popup__block-body__request">
+            <p class="request-text">Оставьте <span class="request-text_red" >заявку</span> и мы<br> вам <span class="request-text_red" >Перезвоним</span>
+            <div class="request__block-inputs">
+              <div class="request__block-input request__input-name">
+                <input class="request__input" type="text" placeholder="Имя" name="name " id="name" required >
+              </div>
+              <div class="request__block-input request__input-number">
+                <input class="request__input" pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" size="13" type="text" title="Введите в таком формате: +7 999 999 99 99" placeholder="Телефон" name="phoneNumber:" >
+              </div>
+              <div class="request__block-input request__input-text">
+                <input class="request__input" type="text" placeholder="E-mail" name="mail" id="mail" required >
+              </div>
+              <div class="request__block-input request__block-button">
+                <button type="submit" class="request__input button button_popup ">Перезвоните мне</button>
+                <p class="request__footer-text">
+                  Нажимая на кнопку, вы даете согласие на обработку персональных
+                  данных и соглашаетесь c политикой конфиденциальности
+                </p>
+                </div>
+            </div>
 
         </div>
       </div>
