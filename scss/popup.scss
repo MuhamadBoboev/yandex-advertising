@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   z-index: 12;
+  overflow-y: auto;
 
   opacity: 0;
   visibility: hidden;
@@ -49,8 +50,8 @@
 }
 .popup__close {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
   font-size: 25px;
   color: #000;
   text-decoration: none;
@@ -79,6 +80,10 @@
   .popup__text {
     font-size: 21px;
   }
+  .popup__close {
+    top: 5px;
+    right: 5px;
+  }
 }
 @media (max-width: 960px) {
   .popup__content {
@@ -93,8 +98,13 @@
 
 .popup__block-body__request {
   padding: 50px;
-  text-align: center;
+  // text-align: center;
   max-width: 540px;
+}
+.close-popup_request {
+  right: 20px;
+  top: 20px;
+
 }
 .request-text {
   @include font ($fontFuture-Bold, 30px, 130%);
@@ -111,6 +121,9 @@
   width: 100%;
   @include grid(1fr, auto);
   grid-gap: 20px;
+  input::placeholder{
+    color: #AFAA91;
+  }
 }
 .request__input {
   padding: 14px 23px 15px;
@@ -124,4 +137,40 @@
 .request__footer-text {
   margin-top: 10px;
   @include font ($fontFuture-Book, 14px, 125%)
+}
+@media (max-width: 768px) {
+  .popup {
+
+  }
+  .popup__block-body__request {
+    padding: 50px 5px 20px;
+  }
+  .request-text {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .request-text_red {
+    color: $colorRed;
+  }
+  .popup__block-body__request {
+
+  }
+  .request__block-inputs {
+    margin-top: 30px;
+    width: 100%;
+    @include grid(1fr, auto);
+    grid-gap: 20px;
+  }
+  .request__input {
+    font-size: 14px;
+  }
+  .request__input-button {
+    font-size: 16px;
+  }
+  .request__footer-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 960px) {
+
 }
