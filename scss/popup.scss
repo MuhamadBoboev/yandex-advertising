@@ -73,7 +73,7 @@
   width: 100%;
 }
 .button_popup {
-  width: 50%;
+  width: 100%;
 }
 
 @media (max-width: 960px) {
@@ -87,7 +87,7 @@
 }
 @media (max-width: 960px) {
   .popup__content {
-    padding: 10px;
+    // padding: 10px;
   }
   .popup__text {
     font-size: 18px;
@@ -104,7 +104,9 @@
 .close-popup_request {
   right: 20px;
   top: 20px;
-
+}
+.popup__content__request {
+  padding: 0;
 }
 .request-text {
   @include font ($fontFuture-Bold, 30px, 130%);
@@ -143,23 +145,13 @@
 
   }
   .popup__block-body__request {
-    padding: 50px 5px 20px;
+    padding: 50px 10px 20px;
   }
   .request-text {
     font-size: 20px;
-    text-transform: uppercase;
   }
   .request-text_red {
     color: $colorRed;
-  }
-  .popup__block-body__request {
-
-  }
-  .request__block-inputs {
-    margin-top: 30px;
-    width: 100%;
-    @include grid(1fr, auto);
-    grid-gap: 20px;
   }
   .request__input {
     font-size: 14px;
@@ -170,7 +162,4 @@
   .request__footer-text {
     font-size: 12px;
   }
-}
-@media (max-width: 960px) {
-
 }
