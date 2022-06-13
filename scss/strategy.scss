@@ -45,6 +45,10 @@
   margin-left: 38px;
   position: relative;
 }
+.strategy__button-2 {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
 .strategy__button__text {
   position: absolute;
   text-align: center;
@@ -119,8 +123,13 @@
   .strategy__button-2__block {
     width: 50%;
   }
+
   .strategy__button-2 {
     width: 100%;
+  }
+  .strategy__button-2 {
+    width: -webkit-fill-available;
+    width: -moz-available;
   }
   .strategy__button__text {
     width: 100%;
@@ -157,5 +166,9 @@
   }
   .strategy__button-2 {
     width: 100%;
+  }
+  .strategy__button-2 {
+    width: -webkit-fill-available;
+    width: -moz-available;
   }
 }

@@ -1227,6 +1227,11 @@ body {
   position: relative;
 }
 
+.strategy__button-2 {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
 .strategy__button__text {
   position: absolute;
   text-align: center;
@@ -1327,6 +1332,11 @@ body {
     width: 100%;
   }
 
+  .strategy__button-2 {
+    width: -webkit-fill-available;
+    width: -moz-available;
+  }
+
   .strategy__button__text {
     width: 100%;
     left: 0;
@@ -1363,6 +1373,11 @@ body {
 
   .strategy__button-2 {
     width: 100%;
+  }
+
+  .strategy__button-2 {
+    width: -webkit-fill-available;
+    width: -moz-available;
   }
 }
 .footer {
